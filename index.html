@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index.html</title>
+ 
+} <p id="home">.</p>
+ <body>
+ <style type="text/css">
+   @import url('https://fonts.googleapis.com/css?family=Bitter');
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("https://image.ibb.co/dkSHfA/background.jpg");
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    font-family: monospace;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 1.8rem;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(#222, #000, #000);
+    width: 100vw;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 15px;
+    margin-right: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a.active {
+    color: orange;
+}
+
+#welcome-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+    margin: -15vh 5vw 10vh 5vw;
+    font-family: 'Bitter', serif;
+    font-variant: small-caps;
+    cursor: default;
+}
+
+
+.aboutBox {
+    min-height: 100vh;
+    padding: 5vw;
+    color: white;
+    background-image: linear-gradient(#111, #111, #111, #111, #222);
+}
+
+#myPicture {
+    width: 33vw;
+    float: right;
+    border-radius: 10px;
+    margin-left: 5vw;
+}
+
+.aboutBox p {
+    text-align: justify;
+}
+
+
+.portfoliBox {
+    min-height: 100vh;
+    padding: 5vw;
+    color: white;
+    background-image: linear-gradient(#222, #222, #222, #222, #333);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .project-tile a img {
+    border-radius: 10px 10px 0 0;
+    width: 40vw;
+    height: 33vh;
+}
+
+.container .project-tile p {
+    text-align: center;
+    margin: -1.5vh 0 5vh 0;
+    background-color: white;
+    color: black;
+    padding: 1vh 0;
+}
+
+.container #last-item {
+    visibility: hidden;
+}
+
+
+.contactBox {
+    min-height: 100vh;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5vw;
+    color: white;
+    background-color: #333;
+}
+
+.contactBox p {
+    margin-top: 15vh;
+    font-size: 1.25rem;
+}
+
+.contactBox .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactBox #profile-link, .contactBox .logo {
+    text-decoration: none;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px;
+}
+
+.contactBox #profile-link:hover, .contactBox .logo:hover {
+    background-color: white;
+}
+
+footer {
+    background-image: linear-gradient(#000, #000, #111);
+    color: white;
+    text-align: center;
+    padding: 1vh 0;
+    font-size: 0.75rem;
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+ 
+    html {
+        font-size: 14px;
+    }
+
+    #navbar ul li a {
+        padding: 12.5px;
+    }
+
+    #welcome-section {
+        font-size: 1.55rem;
+    }
+
+    .aboutBox {
+        padding: 7.5vw;
+    }
+
+    #myPicture {
+        float:none;
+        display: block;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+
+    .portfolioBox {
+        padding: 7.5vw;
+    }
+
+    .container .project-tile a img {
+        width: 40vw;
+        height: 25vh;
+    }
+
+  
+    .contactBox {
+        padding: 7.5vw;
+    }
+
+    .contactBox #profile-link, .contactBox .logo {
+        margin: 1vh 1vw;
+    }
+
+ 
+    footer {
+        padding: 1.25vh 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    
+    html {
+        font-size: 12px;
+    }
+
+   
+    #navbar ul {
+        justify-content: space-around;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    #welcome-section {
+        font-size: 1.35rem;
+    }
+
+    .aboutBox {
+        padding: 10vw;
+    }
+
+    #myPicture {
+        float:none;
+        display: block;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    .aboutBox p {
+        text-align: center;
+    }
+
+    .portfolioBox {
+        padding: 10vw;
+    }
+
+    .container .project-tile a img {
+        width: 80vw;
+        height: 25vh;
+    }
+
+    .container #last-item {
+        display: none;
+    }
+    .contactBox {
+        padding: 10vw;
+    }
+
+    .contactBox #profile-link, .contactBox .logo {
+        padding: 7.5px;
+        margin: 1vh 1vw;
+    }
+
+    footer {
+        padding: 1.5vh 0;
+    }
+}
+
+</style>
+
+
+
+  
+  <nav id="navbar">
+            <ul>
+                <li><a href="#home" class="scroll active" id="Index-link">Index</a></li>
+                <li><a href="#about" class="scroll" id="about-link">About</a></li>
+                <li><a href="#projects" class="scroll" id="projects-link">Portfolio</a></li>
+                <li><a href="#contact" class="scroll" id="contact-link">Contact</a></li>
+                <li><a href="#My Works" class="scroll" id="Works-link">My Works</a></li>
+            </ul>
+        </nav>
+
+     
+        <header id="welcome-section">
+            <h1>Welcome to Aditi's portfolio </h1>
+        </header>
+
+        <section class="aboutBox" id="about">
+            <h1 class="title">About me</h1>
+            <center>
+            <img style="border:5px solid black;"  src="image.jpeg" alt="Image" height="350" width="300"></center>
+           
+            <p>Hello, my name is Aditi Sharma, and I was born on the 12th of January, 2009. I am 11 years old,I'm from India.I am a student of Lancers International School. I love to play games and make games on scratch it is really fun on the section of My Works are links of games which are made by me please play it and give me my feedback through my contact.</p>
+   
+        </section>
+        
+        <section class="portfoliBox" id="projects">
+            <h1 class="title">Portfolio</h1>
+            <div class="container">
+               I  am a Begginer and learner of Javascript.I have studied about HTML and CSS and I have also made forms like Admission Forms and etc.I also Know about scratch app and i have made many projects or games you can play on it.
+             
+        
+        <section class="contactBox" id="contact">
+            <p>MY CONTACTS</p>
+            <div class="links-container">
+                <a href="mailto:aditisharmajan12@gmail.com" target="_blank" class="logo">Email</a>
+            </div>
+            
+        </section>
+ <section class=" My Works" id="Works">
+            <h1 class="title">My Works</h1>
+            <div class="container">
+            These are few images of my work done by me:
+         <image src="Calculator.jpeg" height=350 px width=300 px >
+         <image src="Zip Code.jpeg" height=350 px width=300 px >
+        <image src="Admission Form.jpeg" height=350 px width=300 px >
+        
+
+
+
+
+
+
+        <footer>Written and coded by Aditi Sharma</footer>
+    
+    </body>
+</html>
+
+
